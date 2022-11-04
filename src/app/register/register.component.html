@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="login-box">
+    <form #studentNew="ngForm" (ngSubmit)="onSubmit(studentNew.value)" class="email-login">
+        <br>
+        <div class="u-form-group">
+            <label for="name" id = "label_name" hidden>Fill name</label>
+            <input type="text" name = "name" placeholder="Name" id = "name" ngModel/>
+        </div>
+        <div class="u-form-group">
+            <label for="surname" id = "label_surname" hidden>Fill surname</label>
+            <input type="text" name = "surname" placeholder="Surname" id = "surname" ngModel/>
+        </div>
+        <div class="u-form-group">
+            <label for="group_grade" id = "label_surname" hidden>Fill group</label>
+            <input type="text" name = "group_grade" placeholder="Group" id = "group_grade" ngModel/>
+        </div>
+        <div class="u-form-group">
+            <label for="birth" id = "label_birth" hidden>Fill birth</label>
+            <input type="date" name = "birth" placeholder="birth" value="2003-07-08" id = "birth" ngModel/>
+        </div>
+        
+        <div class="u-form-group">
+            <button id = "submit" type="submit" >Create</button>
+        </div>
+        
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+#delete{
+    border-radius: 5px;
+    background-color: rgb(242, 56, 56);
+    border: 0px;
+    color:white;
+    height: 35px;
+
+}
+button a {
+    text-decoration: none;
+    color:black;
+}
+.wrapper{
+   
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: rgb(236, 236, 236);
+    width: 50%;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+   
+}
+#birth{
+    
+}

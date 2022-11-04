@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    
+    
+    <div class = "wrapper">
+    <div class="container">
+        <br>
+        <h1>Students </h1>
+        <br>
+         <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Group</th>
+                    <th>Birth</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.surname}}</td>
+                    <td>{{user.group_grade}}</td>
+                    <td id = 'birth'>{{user.birth.slice(0, 10)}}</td>
+                    <td><button type="button" id = "delete" (click)="deleteStudent(user.id)">Delete</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="container">
+        <button type="button" class="btn btn-primary">
+            <a routerLink="/create" routerLinkActive="active" ariaCurrentWhenActive="page">Create</a>
+        </button>
+    </div>
+
+</div>
+</body>
+
+</html>
